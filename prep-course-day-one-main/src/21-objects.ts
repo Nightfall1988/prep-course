@@ -35,3 +35,10 @@ const writers = [
     alive: true
   }
 ];
+
+for (let val in writers)  {
+    let writer = writers[val];
+    if (writer['alive'] == true) {
+        console.log("Hi, my name is " + writer['firstName'] + " " + writer['lastName'] + "! I am " + writer['age'] + " years old, and work as a "  + writer['occupation'])
+    }
+}

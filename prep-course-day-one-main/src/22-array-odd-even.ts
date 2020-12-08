@@ -1,6 +1,8 @@
 export {};
 
-function goThroughNumbers(start, end) {}
+function goThroughNumbers(start, end) {
+    
+}
 
 goThroughNumbers(3, 7);
 /* Expected output:
@@ -12,6 +14,10 @@ goThroughNumbers(3, 7);
     > 7 - odd
 
 */
+
+git add prep-course-day-one-main/src/20-slice.ts
+git add prep-course-day-one-main/src/21-objects.ts
+git add prep-course-day-one-main/src/22-array-odd-even.ts
 
 goThroughNumbers(8, 12);
 /* Expected output:
