@@ -1,7 +1,17 @@
 export {};
 
-function goThroughNumbers(start, end) {
-    
+function goThroughNumbers(start: number, end: number) {
+    if (start < end) {
+        for (var i=start; i<=end; i++) {
+            if (i % 2 == 0) {
+                console.log('> ' + i + ' - even')
+            } else {
+                console.log('> ' + i + ' - odd')
+            }
+        }
+    } else {
+        console.log('Invalid input')
+    }
 }
 
 goThroughNumbers(3, 7);
@@ -14,10 +24,6 @@ goThroughNumbers(3, 7);
     > 7 - odd
 
 */
-
-git add prep-course-day-one-main/src/20-slice.ts
-git add prep-course-day-one-main/src/21-objects.ts
-git add prep-course-day-one-main/src/22-array-odd-even.ts
 
 goThroughNumbers(8, 12);
 /* Expected output:

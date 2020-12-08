@@ -1,14 +1,34 @@
 export {};
 
-function add() {}
+function add(num1: number, num2: number) {
+    return num1 + num2;
+}
 
-function subtract() {}
+function subtract(num1: number, num2: number) {
+    return num1 - num2;
+}
 
-function sum() {}
+function sum(list:number[]) {
+    var output:number;
+    for(var i = 0;i<list.length;i++) {
+        output += list[i];
+   }
+   return output;
+}
 
-function multiply() {}
+function multiply(list:number[]) {
+        var output:number;
+    for(var i = 0;i<list.length;i++) {
+        output *= list[i];
+   }
+   return output;
+}
 
-function power() {}
+function power(x:number, y:number) {
+    var output:number
+    output = Math.pow(x, y);
+    return output;
+}
 
 console.log(add(1, 2)); // Expected output: 3
 console.log(subtract(1, 2)); // Expected output: -1
