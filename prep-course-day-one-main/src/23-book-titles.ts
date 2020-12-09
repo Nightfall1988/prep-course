@@ -11,6 +11,14 @@ const books = [
   }
 ];
 
-const getTheTitles = () => {};
+const getTheTitles = (books: object[]) => {
+    let titleArray: string[] = [];
+    for (let i of books) {
+        if(i['author'] == 'Tim Ferris') {
+            titleArray.push(i['title'])
+        }
+    }
+    return titleArray;
+};
 
 console.log(getTheTitles(books)); // Expected output: ['4 hour work week', 'Tools of Titans']
