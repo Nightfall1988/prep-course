@@ -7,7 +7,6 @@ export {};
 const map = () => {};
 
 const numbers = [1, 2, 3];
-const doubled = map(numbers, function(number) {
-  return number * 2;
-});
+
+const doubled = numbers.map(i => {return i * 2}) 
 console.log(doubled); // Expected result: [2, 4, 6]

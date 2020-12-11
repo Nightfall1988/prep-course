@@ -18,7 +18,15 @@ const library = [
   }
 ];
 
-const showStatus = () => {};
+const showStatus = (obj:object) => {
+    obj.forEach((book: {isRead: boolean; title: string; author: string; }) => {
+    if (book.isRead == true) {
+        console.log('Already read ' + book.title + ' by ' + book.author + '.')
+    } else {
+        console.log('You still need to read ' + book.title + ' by ' + book.author + '.')
+    }
+  })  
+}
 
 showStatus(library);
 
